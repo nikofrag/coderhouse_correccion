@@ -1,0 +1,63 @@
+/* Estilos Generales */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+
+h1 {
+    color: #264653;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #2A9D8F;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #0077B6;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* Navegación */
+
+.enlace {
+    color: #0077B6;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.enlace:hover {
+    color: #2A9D8F;
+}
+
+
+/* Imágenes */
+
+.producto {
+    width: 300px;
+}
+
+
+/* Footer */
+
+.texto-footer {
+    color: #0077B6;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
