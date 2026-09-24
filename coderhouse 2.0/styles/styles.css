@@ -1,63 +1,106 @@
-/* Estilos Generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-}
-
-h1 {
-    color: #264653;
-    font-size: 40px;
-    font-weight: 700;
-}
-
-h2 {
-    color: #2A9D8F;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-h3 {
-    color: #0077B6;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-p {
+    background-color: #ffffff;
     color: #333333;
-    font-size: 16px;
-    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Header y Navegacion */
+header {
+    background-color: #e6a875;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* Navegación */
+header h1 {
+    color: #264653;
+    font-size: 32px;
+    font-weight: 700;
+}
 
-.enlace {
-    color: #0077B6;
-    font-size: 16px;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+nav a {
+    color: #0077b6;
+    font-size: 15px;
     font-weight: 600;
     text-decoration: underline;
 }
 
-.enlace:hover {
-    color: #2A9D8F;
+nav a:hover {
+    color: #2a9d8f;
 }
 
-
-/* Imágenes */
-
-.producto {
-    width: 300px;
+/* Contenido Principal */
+main {
+    flex: 1;
+    padding: 2rem;
 }
 
+h2 {
+    color: #2a9d8f;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+/* Secciones de Tarjetas en Flexbox */
+.seccion-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.card {
+    background-color: #cbeeff;
+    border: 1px solid #2b93bd;
+    padding: 1.2rem;
+    flex: 1;
+    min-width: 250px;
+}
+
+.card h3 {
+    color: #0077b6;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.4;
+}
 
 /* Footer */
-
-.texto-footer {
-    color: #0077B6;
-    font-size: 14px;
-    font-weight: 600;
+footer {
+    background-color: #e6a875;
+    padding: 1.2rem 2rem;
+    margin-top: auto;
 }
 
+footer p {
+    color: #0077b6;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
 
 
