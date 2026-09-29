@@ -15,25 +15,29 @@ body {
     flex-direction: column;
 }
 
-/* Header y Navegacion */
+/* Header y navegacion */
 header {
     background-color: #e6a875;
     padding: 1.5rem 2rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 header h1 {
     color: #264653;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
+    text-align: center;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 nav a {
@@ -47,10 +51,13 @@ nav a:hover {
     color: #2a9d8f;
 }
 
-/* Contenido Principal */
+/* Contenido principal */
 main {
     flex: 1;
-    padding: 2rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 h2 {
@@ -60,10 +67,10 @@ h2 {
     margin-bottom: 1.2rem;
 }
 
-/* Secciones de Tarjetas en Flexbox */
+/* Tarjetas en flexbox */
 .seccion-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
 }
@@ -72,21 +79,61 @@ h2 {
     background-color: #cbeeff;
     border: 1px solid #2b93bd;
     padding: 1.2rem;
-    flex: 1;
-    min-width: 250px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
 }
 
 .card h3 {
     color: #0077b6;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 0.5rem;
 }
 
 .card p {
     font-size: 14px;
     color: #333333;
     line-height: 1.4;
+}
+
+/* Control de tamaño de imagenes */
+.img-producto {
+    max-width: 220px;
+    max-height: 180px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Grilla con grid-template-areas para productos destacados */
+.grid-destacados {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        "destacado-1"
+        "destacado-2"
+        "destacado-3"
+        "destacado-4";
+    margin-bottom: 2.5rem;
+}
+
+.area-1 { grid-area: destacado-1; }
+.area-2 { grid-area: destacado-2; }
+.area-3 { grid-area: destacado-3; }
+.area-4 { grid-area: destacado-4; }
+
+.card-grid {
+    background-color: #cbeeff;
+    border: 1px solid #2b93bd;
+    padding: 1.2rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 /* Footer */
@@ -103,4 +150,37 @@ footer p {
     margin-bottom: 0.2rem;
 }
 
+/* Media query escritorio */
+@media (min-width: 1024px) {
 
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    nav ul {
+        gap: 1.2rem;
+    }
+
+    .seccion-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .seccion-cards .card {
+        flex: 1 1 calc(50% - 1.5rem);
+    }
+
+    .grid-destacados {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "destacado-1 destacado-1 destacado-2"
+            "destacado-3 destacado-4 destacado-2";
+    }
+}
