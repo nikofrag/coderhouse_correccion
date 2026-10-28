@@ -21,7 +21,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end px-3" id="navbarNav">
                     <ul class="navbar-nav gap-2">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
@@ -44,29 +44,39 @@
         </nav>
     </header>
 
-    <main>
-        <section class="seccion-nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>
-                En <strong>Overclock Hardware Store</strong> nos apasiona la tecnología y el alto rendimiento. 
-                Nacimos con el objetivo de brindar componentes de calidad tanto a entusiastas del gaming como a profesionales que buscan potenciar sus estaciones de trabajo.
-            </p>
+    <main class="container my-4">
+        <h2 class="mb-3 text-center">Sobre Nosotros</h2>
+        <p class="text-center mb-4 text-muted">Conocé quiénes somos y qué nos impulsa en el mundo del hardware.</p>
 
-            <article class="historia-nosotros">
-                <h3>Nuestra Historia y Misión</h3>
-                <p>
-                    Desde nuestros inicios, trabajamos para acercar las últimas novedades del mercado de hardware, asegurando un catálogo variado y garantizando soporte técnico personalizado para cada armado.
-                </p>
+        <!-- Grilla de Secciones en Tarjetas -->
+        <section class="row g-4">
+
+            <article class="col-12 col-md-6">
+                <div class="card h-100">
+                    <h3>Nuestra Identidad</h3>
+                    <p class="mb-0">En <strong>Overclock Hardware Store</strong> nos apasiona la tecnología y el alto rendimiento. Nacimos con el objetivo de brindar componentes de calidad tanto a entusiastas del gaming como a profesionales que buscan potenciar sus estaciones de trabajo.</p>
+                </div>
             </article>
 
-            <article class="valores-nosotros">
-                <h3>Nuestros Pilares</h3>
-                <ul>
-                    <li><strong>Calidad Garantizada:</strong> Seleccionamos componentes de marcas líderes del mercado.</li>
-                    <li><strong>Asesoramiento Técnico:</strong> Guiamos tu compra de acuerdo a tus necesidades reales y presupuesto.</li>
-                    <li><strong>Compromiso Postventa:</strong> Te acompañamos en el armado, configuración y garantía de tus productos.</li>
-                </ul>
+            <article class="col-12 col-md-6">
+                <div class="card h-100">
+                    <h3>Nuestra Historia y Misión</h3>
+                    <p class="mb-0">Desde nuestros inicios, trabajamos para acercar las últimas novedades del mercado de hardware, asegurando un catálogo variado y garantizando soporte técnico personalizado para cada armado.</p>
+                </div>
             </article>
+
+            <article class="col-12">
+                <div class="card h-100">
+                    <h3>Nuestros Pilares</h3>
+                    <p class="text-muted mb-3">Los valores que guían cada uno de nuestros servicios:</p>
+                    <ul>
+                        <li><strong>Calidad Garantizada:</strong> Seleccionamos componentes de marcas líderes del mercado.</li>
+                        <li><strong>Asesoramiento Técnico:</strong> Guiamos tu compra de acuerdo a tus necesidades reales y presupuesto.</li>
+                        <li><strong>Compromiso Postventa:</strong> Te acompañamos en el armado, configuración y garantía de tus productos.</li>
+                    </ul>
+                </div>
+            </article>
+
         </section>
     </main>
 
@@ -76,7 +86,7 @@
     </footer>
 
     <!-- CDN JS Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

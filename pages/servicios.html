@@ -21,7 +21,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end px-3" id="navbarNav">
                     <ul class="navbar-nav gap-2">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
@@ -44,49 +44,60 @@
         </nav>
     </header>
 
-    <main>
-        <section class="seccion-servicios">
-            <h2>Nuestros Servicios Especializados</h2>
-            <p>Ofrecemos soluciones integrales para optimizar, mantener y armar tu equipo técnico.</p>
+    <main class="container my-4">
+        <h2 class="mb-3 text-center">Nuestros Servicios Especializados</h2>
+        <p class="text-center mb-4 text-muted">Ofrecemos soluciones integrales para optimizar, mantener y armar tu equipo técnico.</p>
 
-            <article class="servicio-item">
-                <h3>1. Armado de PC Custom</h3>
-                <p>Ensamblado profesional adaptado a tu presupuesto y necesidades específicas.</p>
-                <ul>
-                    <li>Orden e instalación limpia de cableado (Cable Management).</li>
-                    <li>Configuración inicial de BIOS y perfiles de memoria.</li>
-                    <li>Pruebas de rendimiento y control de temperaturas.</li>
-                </ul>
+        <!-- Grilla de Servicios en Tarjetas -->
+        <section class="row g-4">
+
+            <article class="col-12 col-md-6">
+                <div class="card h-100">
+                    <h3>1. Armado de PC Custom</h3>
+                    <p class="mb-3">Ensamblado profesional adaptado a tu presupuesto y necesidades específicas.</p>
+                    <ul>
+                        <li>Orden e instalación limpia de cableado (Cable Management).</li>
+                        <li>Configuración inicial de BIOS y perfiles de memoria.</li>
+                        <li>Pruebas de rendimiento y control de temperaturas.</li>
+                    </ul>
+                </div>
             </article>
 
-            <article class="servicio-item">
-                <h3>2. Mantenimiento General</h3>
-                <p>Servicio preventivo y correctivo para prolongar la vida útil de tus componentes.</p>
-                <ul>
-                    <li>Limpieza profunda de componentes y filtros de aire.</li>
-                    <li>Cambio de pasta térmica en procesador y placa de video.</li>
-                    <li>Optimización del flujo de aire en el gabinete.</li>
-                </ul>
+            <article class="col-12 col-md-6">
+                <div class="card h-100">
+                    <h3>2. Mantenimiento General</h3>
+                    <p class="mb-3">Servicio preventivo y correctivo para prolongar la vida útil de tus componentes.</p>
+                    <ul>
+                        <li>Limpieza profunda de componentes y filtros de aire.</li>
+                        <li>Cambio de pasta térmica en procesador y placa de video.</li>
+                        <li>Optimización del flujo de aire en el gabinete.</li>
+                    </ul>
+                </div>
             </article>
 
-            <article class="servicio-item">
-                <h3>3. Upgrade de Componentes</h3>
-                <p>Mejoramos el rendimiento de tu PC actual instalando nuevo hardware.</p>
-                <ul>
-                    <li>Instalación de unidades SSD M.2 y discos rígidos.</li>
-                    <li>Ampliación de memoria RAM.</li>
-                    <li>Reemplazo de fuentes de alimentación y placas de video.</li>
-                </ul>
+            <article class="col-12 col-md-6">
+                <div class="card h-100">
+                    <h3>3. Upgrade de Componentes</h3>
+                    <p class="mb-3">Mejoramos el rendimiento de tu PC actual instalando nuevo hardware.</p>
+                    <ul>
+                        <li>Instalación de unidades SSD M.2 y discos rígidos.</li>
+                        <li>Ampliación de memoria RAM.</li>
+                        <li>Reemplazo de fuentes de alimentación y placas de video.</li>
+                    </ul>
+                </div>
             </article>
 
-            <article class="servicio-item">
-                <h3>4. Asesoramiento Técnico</h3>
-                <p>Te ayudamos a elegir la mejor combinación de componentes sin pagar de más.</p>
-                <ul>
-                    <li>Análisis de compatibilidad entre piezas.</li>
-                    <li>Diagnóstico para evitar cuellos de botella en el sistema.</li>
-                </ul>
+            <article class="col-12 col-md-6">
+                <div class="card h-100">
+                    <h3>4. Asesoramiento Técnico</h3>
+                    <p class="mb-3">Te ayudamos a elegir la mejor combinación de componentes sin pagar de más.</p>
+                    <ul>
+                        <li>Análisis de compatibilidad entre piezas.</li>
+                        <li>Diagnóstico para evitar cuellos de botella en el sistema.</li>
+                    </ul>
+                </div>
             </article>
+
         </section>
     </main>
 
@@ -96,7 +107,7 @@
     </footer>
 
     <!-- CDN JS Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

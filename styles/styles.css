@@ -1,232 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #333333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background-color: #e5b388;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #121212;
+  margin: 0;
 }
 
-/* Transiciones e interactividad */
-a, button, .card, .card-grid, .btn {
-    transition: all 0.3s ease;
-}
-
-/* Header y Navbar de Bootstrap */
-header {
-    background-color: #e6a875;
-    padding: 0.8rem 1.5rem;
-}
-
-.navbar {
-    background-color: transparent !important;
-    padding: 0 !important;
-}
-
-.navbar-brand {
-    color: #264653 !important;
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.nav-link {
-    color: #0077b6 !important;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: #2a9d8f !important;
-}
-
-.nav-link:active,
-.nav-link.active {
-    color: #264653 !important;
-}
-
-.navbar-toggler {
-    border-color: #264653;
-}
-
-/* Contenido principal */
 main {
-    flex: 1;
-    padding: 2rem 1.5rem;
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
+  padding: 2.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h2 {
-    color: #2a9d8f;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #008080;
+  margin-bottom: 1.5rem;
 }
 
-/* Carrusel acotado */
-#carouselPrincipal {
-    max-width: 800px;
-    margin: 0 auto 2.5rem auto;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+header {
+  background-color: #e5b388;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #282828;
+}
+
+footer {
+  background-color: #d49b6a;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  border-top: 1px solid #282828;
+}
+footer p {
+  margin: 0.25rem 0;
+  color: #888888;
+  font-size: 14px;
+}
+
+.carousel {
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #d49b6a;
 }
 
 .img-carousel {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
 
-/* Tarjetas en Flexbox y componentes de Bootstrap */
-.seccion-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
-    justify-content: center;
-}
-
-.card {
-    background-color: #cbeeff;
-    border: 1px solid #2b93bd;
-    padding: 1.2rem;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.card:hover {
-    transform: translateY(-3px);
-}
-
-.card-title {
-    color: #0077b6;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.card-text {
-    font-size: 14px;
-    color: #333333;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-}
-
-/* Estilos personalizados para el botón de Bootstrap */
-.btn-primary {
-    background-color: #0077b6;
-    border-color: #0077b6;
-    font-weight: 600;
-    padding: 0.4rem 1.2rem;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #2a9d8f;
-    border-color: #2a9d8f;
-}
-
-.btn-primary:active {
-    background-color: #264653 !important;
-    border-color: #264653 !important;
-}
-
-/* Imágenes de productos */
-.img-producto {
-    width: 100%;
-    max-height: 180px;
-    object-fit: contain;
-    margin: 0.8rem 0;
-}
-
-/* Grilla CSS Grid */
 .grid-destacados {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-areas:
-        "destacado-1"
-        "destacado-2"
-        "destacado-3"
-        "destacado-4";
-    margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.area-1 { grid-area: destacado-1; }
-.area-2 { grid-area: destacado-2; }
-.area-3 { grid-area: destacado-3; }
-.area-4 { grid-area: destacado-4; }
-
-.card-grid {
-    background-color: #cbeeff;
-    border: 1px solid #2b93bd;
-    padding: 1.2rem;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.card-grid,
+.card {
+  background-color: #ffffff !important;
+  padding: 1.5rem;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #008080 !important;
+  border: 1px solid #d49b6a !important;
+  margin-bottom: 1.5rem;
+}
+.card-grid:hover,
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 128, 128, 0.2);
+}
+.card-grid h3,
+.card h3 {
+  color: #008080;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.card-grid p,
+.card p {
+  font-size: 14px;
+  color: #121212;
+  margin: 0;
+}
+.card-grid ul,
+.card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.card-grid ul li,
+.card ul li {
+  font-size: 14px;
+  color: #121212;
+  margin-bottom: 0.4rem;
 }
 
-.card-grid h3 {
-    color: #0077b6;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
+.img-producto {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 6px;
 }
 
-.card-grid p {
-    font-size: 14px;
-    color: #333333;
-    margin: 0;
-}
-
-.card-grid:hover {
-    transform: translateY(-3px);
-}
-
-/* Footer */
-footer {
-    background-color: #e6a875;
-    padding: 1.2rem 2rem;
-    margin-top: auto;
-}
-
-footer p {
-    color: #0077b6;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-}
-
-/* Media query escritorio */
-@media (min-width: 992px) {
-    .seccion-cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .seccion-cards .card {
-        flex: 1;
-        max-width: 280px;
-    }
-
-    .grid-destacados {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "destacado-1 destacado-2 destacado-3 destacado-4";
-    }
-}
+/*# sourceMappingURL=styles.css.map */

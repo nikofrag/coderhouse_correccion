@@ -1,0 +1,7 @@
+@use '../utilities/variables' as *;
+
+header {
+    background-color: $color-header;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #282828;
+}

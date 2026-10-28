@@ -1,0 +1,16 @@
+@use '../utilities/variables' as *;
+
+footer {
+    background-color: $color-footer;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+    border-top: 1px solid #282828;
+    
+    p {
+        margin: 0.25rem 0;
+        color: #888888;
+        font-size: 14px;
+    }
+}
