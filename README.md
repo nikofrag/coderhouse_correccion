@@ -1,27 +1,37 @@
-# Overclock Hardware Store
+# Overclock Hardware Store 🖥️⚙️
 
-Proyecto para el curso de Desarrollo Web de Coderhouse. Es una tienda online enfocada en venta de componentes de PC y periféricos gaming.
-
-## 🔗 Links
-
-* **Sitio Web (GitHub Pages):** https://nikofrag.github.io/coderhouse_correccion/
-* **Repositorio:** https://github.com/nikofrag/coderhouse_correccion
+Proyecto e-commerce y tienda de hardware desarrollado para los cursos de Coderhouse. El sitio web ofrece un catálogo completo de componentes, servicios técnicos especializados y canales de atención, estructurado bajo una arquitectura modular y profesional.
 
 ---
 
-## 🛠️ Tecnologías y herramientas utilizadas
+## 🚀 Tecnologías y Herramientas Utilizadas
 
-* **HTML5:** Estructura semántica de las distintas secciones.
-* **CSS3 Custom:** Hoja de estilos propia (`styles.css`) para definir la paleta de colores en dark mode, tipografías e integración con Google Fonts (Poppins).
-* **Flexbox y CSS Grid:** Utilizados para la maquetación de los productos destacados y la organización de los elementos en pantalla.
-* **Bootstrap 5:** Implementado para la barra de navegación (Navbar) responsive y el carrusel de imágenes automático de la página principal.
+* **HTML5 / CSS3**: Estructura semántica y maquetación web.
+* **SASS / SCSS**: Metodología modular con preprocesador y compilación a CSS.
+* **Bootstrap 5 (CDN)**: Sistema de grillas responsivas, componentes interactivos y barra de navegación adaptativa.
+* **Git & GitHub**: Control de versiones y despliegue en producción mediante GitHub Pages.
 
 ---
 
-## 📂 Páginas del proyecto
+## 📂 Arquitectura de Estilos (SCSS)
 
-* `index.html` (Inicio con carrusel e imágenes destacadas)
-* `pages/productos.html`
-* `pages/servicios.html`
-* `pages/nosotros.html`
-* `pages/contacto.html`
+Siguiendo las buenas prácticas de desarrollo frontend, la hoja de estilos fue completamente refactorizada desde CSS plano a una **arquitectura modular de partials** organizada en 4 carpetas obligatorias:
+
+```text
+styles/
+│
+├── utilities/        # Variables globales y tokens de diseño
+│   └── _variables.scss
+│
+├── base/             # Estilos globales y reseteo de etiquetas
+│   ├── _base.scss
+│   └── _tipografia.scss
+│
+├── layout/           # Estructura principal y contenedores fijos
+│   ├── _header.scss
+│   └── _footer.scss
+│
+├── components/       # Elementos reutilizables (tarjetas, grillas, etc.)
+│   └── _cards.scss
+│
+└── main.scss         # Archivo maestro (único punto de entrada con @use)
