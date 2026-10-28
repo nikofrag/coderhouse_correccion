@@ -1,6 +1,8 @@
 # Overclock Hardware Store 🖥️⚙️
 
-Proyecto e-commerce y tienda de hardware desarrollado para los cursos de Coderhouse. El sitio web ofrece un catálogo completo de componentes, servicios técnicos especializados y canales de atención, estructurado bajo una arquitectura modular y profesional.
+Proyecto de hardware gaming desarrollado para los cursos de Coderhouse. El sitio web ofrece un catálogo completo de componentes, servicios técnicos especializados y canales de atención, estructurado bajo una arquitectura modular y profesional.
+
+🌐 **Sitio Web en Vivo**: [Ver Overclock Hardware Store online](https://nikofrag.github.io/coderhouse_correccion/index.html)
 
 ---
 
